@@ -22,3 +22,5 @@ install(FILES "${CMAKE_BINARY_DIR}/${PROJECT_NAME}.pc" DESTINATION "lib/pkgconfi
 
 install(FILES "GPMF_parser.h" "GPMF_common.h" "GPMF_utils.h" DESTINATION "include/gpmf-parser")
 install(FILES "demo/GPMF_mp4reader.h" DESTINATION "include/gpmf-parser/demo")
+
+add_executable(gpmf-extract ${LIB_SOURCES} "GPMF_extract.c" "demo/GPMF_print.c" "demo/GPMF_mp4reader.c")
